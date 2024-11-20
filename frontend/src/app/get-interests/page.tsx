@@ -25,19 +25,30 @@ const GetInterestsPage = () => {
       </h1>
 
       {/* user_id */}
-      <div className="lg:flex flex-row items-center p-2 justify-start gap-8 my-6">
+      <div className="lg:flex flex-row items-start p-2 justify-start gap-8 my-6">
         <Label htmlFor="user_id" className="w-16">
           user_id:{" "}
         </Label>
-        <Input
-          type="text"
-          required
-          value={userId}
-          placeholder="123"
-          className="text-center"
-          onKeyDown={handleKeyDown}
-          onChange={(e) => setUserId(e.target.value)}
-        />
+        <div className="flex-1">
+          <Input
+            type="text"
+            required
+            value={userId}
+            placeholder="123"
+            className="text-center"
+            onKeyDown={handleKeyDown}
+            onChange={(e) => setUserId(e.target.value)}
+          />
+          {userId && (
+            <Label className="my-2">
+              Press{" "}
+              <span className="bg-gray-500 px-1 py-0.5 rounded-sm text-teal-300">
+                Enter
+              </span>{" "}
+              to fetch....
+            </Label>
+          )}
+        </div>
       </div>
 
       {/* preferences */}

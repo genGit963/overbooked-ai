@@ -10,7 +10,11 @@ import { useRecommendationPost } from "@/hooks/useRecommendationPost.hook";
 
 const CreateInterestPage = () => {
   const [userId, setUserId] = useState<RecommendationType["user_id"]>("");
-  const [preferences, setPreferences] = useState<string[]>([""]);
+  const [preferences, setPreferences] = useState<string[]>([
+    "science fiction",
+    "artificial intelligence",
+    "space exploration",
+  ]);
 
   const { postRecommendation, isLoading, error } = useRecommendationPost();
 
