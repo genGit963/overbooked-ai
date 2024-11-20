@@ -24,6 +24,8 @@ docker run -it --rm \
 wiremock/wiremock:3.9.2
 ```
 
+---
+
 3. run given cmd below to check if wiremock is running
    ```javascript
    // run in browser
@@ -39,6 +41,8 @@ wiremock/wiremock:3.9.2
 npm run dev
 ```
 
+---
+
 > # 4. Frontend
 
 ```bash
@@ -46,6 +50,14 @@ npm run dev
 npm run dev
 ```
 
-> # 5. Doubt
+---
+
+> # 5. API: Postman
+
+##### import the json file to postman and you check APIs: **ASSESSMENT.postman_collection.json**
+
+---
+
+> # 6. Doubt
 
 _for any doubt: **emailto: bogati.mahesh.299.792.458@gmail.com**_
