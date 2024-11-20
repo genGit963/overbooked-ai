@@ -1,0 +1,54 @@
+# version: '3.8'
+
+# services:
+#   app:
+#     build: .
+#     command: npm run dev
+#     volumes:
+#       - .:/usr/src/app
+#     ports:
+#       - "8000:8000"
+#     depends_on:
+#       - wiremock
+#       - db
+
+#   wiremock:
+#     image: wiremock/wiremock:2.35.0
+#     ports:
+#       - "8080:8080"
+#     volumes:
+#       - ./wiremock:/home/wiremock
+#     command: --verbose
+
+# volumes:
+#   mongo_data:
+
+services:
+  app:
+    build: .
+    command: npm run dev
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - wiremock
+      - db
+
+  wiremock:
+    image: wiremock/wiremock:2.35.0
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./wiremock:/home/wiremock
+    command: --verbose
+
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
