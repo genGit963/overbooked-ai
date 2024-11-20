@@ -1,6 +1,6 @@
 # Overbooked AI Project Guide
 
-> # mongodb setup
+> # 1. mongodb setup
 
 1. run given cmd and then start it
 2. **Or you can specify your own local or remote mongodb:url**
@@ -11,7 +11,7 @@ docker run -d -p 27017:27017 --name mongo-db -v mongo_data:/data/db mongo:latest
 
 ---
 
-> # wiremock start
+> # 2. wiremock start
 
 1.  check if `mappings` is in root dir with its files inside
 2.  copy and run wiremock docker cmd
@@ -32,11 +32,20 @@ wiremock/wiremock:3.9.2
 
 ---
 
-> # start the server
-
-1. go with dev mode
+> # 3. start the server
 
 ```bash
-# for now: dev mode
+# run
 npm run dev
 ```
+
+> # 4. Frontend
+
+```bash
+# run
+npm run dev
+```
+
+> # 5. Doubt
+
+_for any doubt: **emailto: bogati.mahesh.299.792.458@gmail.com**_
