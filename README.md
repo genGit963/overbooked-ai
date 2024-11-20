@@ -61,3 +61,6 @@ npm run dev
 > # 6. Doubt
 
 _for any doubt: **emailto: bogati.mahesh.299.792.458@gmail.com**_
+
+
+> please, consider other security measures and practices, like env config and other for this assignment, if any furthur question, I welcome you to ask me on interview.
