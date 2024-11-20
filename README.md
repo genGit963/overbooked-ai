@@ -35,7 +35,7 @@ wiremock/wiremock:3.9.2
 > # 3. start the server
 
 ```bash
-# run
+# make sure you run server on 8000 for frontend
 npm run dev
 ```
 
